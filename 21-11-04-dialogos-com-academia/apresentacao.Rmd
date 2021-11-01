@@ -1,0 +1,140 @@
+---
+title: "Diálogos com a academia"
+subtitle: "programação em R para pesquisa científica"
+author: "Ricardo Feliz Okamoto <br/> (ABJ)"
+date: "2021/11/04"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+# Quem sou eu 
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#E69F00",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono")
+)
+```
+
+Estudante de Direito na Universidade de São Paulo (USP)
+
+Ex-bolsista do Programa de Educação Tutorial do MEC (PET - Sociologia Jurídica)
+
+Pesquisador na Associação Brasileira de Jurimetria (ABJ)
+
+```{r echo=FALSE, eval=TRUE}
+
+knitr::include_graphics("img/eu.jpg")
+
+```
+
+---
+class: centralized
+
+# Caminho dessa apresentação
+
+Vou contar duas experiências que eu tive com R que me auxiliaram na pesquisa
+1. A primeira é o uso do R dentro do contexto da ABJ
+2. A segunda é o uso do R para fazer meu TCC
+
+---
+# Experiência 1: A ABJ
+
+Listagem de processos 
+- web scraping
+- pedidos de LAI aos tribunais
+
+Classificação manual ou automatizada
+- GForms
+
+Data quality
+- Verificação de inconsistências nos dados
+
+Análise de dados 
+- veremos isso com mais detalhes na experiência 2, sobre o TCC
+
+Produção de relatórios automatizados
+- RMarkdown
+
+---
+# Experiência 2: TCC
+
+## Meu tema
+
+Como que a independência funcional se converte em discricionariedade para os membros do MP na prática?
+
+## Como eu fui tentando resolver esse problema? E onde o R entra nisso?
+
+Eu identifiquei gargalos no procedimento interno do MP para tratar casos e explorei os dados em cada situação.
+
+Como a minha pesquisa foi uma pesquisa quantitativa, o R foi meu parceiro constante
+
+---
+
+## O ciclo da Ciência de dados
+
+```{r echo=FALSE, eval=TRUE}
+
+knitr::include_graphics("img/data-science.png")
+
+```
+
+## Como eu me situei nesse ciclo?
+
+- Importação, limpeza e tratamento dos dados
+- Testes de hipótese
+- Visualização
+
+---
+# Visualização: Elaboração de diagramas!
+```{r echo=FALSE, eval=TRUE}
+
+knitr::include_graphics("img/diagrama_tcc.png")
+
+```
+
+---
+# Visualização: Gráficos de fluxos (sankey plot)
+
+```{r echo=FALSE, eval=TRUE}
+
+knitr::include_graphics("img/sankey.png")
+
+```
+
+---
+# Modelagem e visualização: Visualizando testes de hipótese
+```{r echo=FALSE, eval=TRUE}
+
+knitr::include_graphics("img/partes.png")
+
+```
+
+
+---
+# Modelagem e visualização: Visualizando testes de hipótese
+
+```{r echo=FALSE, eval=TRUE}
+
+knitr::include_graphics("img/temas.png")
+
+```
+
+---
+class: center, middle, inverse
+
+# FIM
+
+```{r echo=FALSE, eval=TRUE}
+
+knitr::include_graphics("img/fim.gif")
+
+```

@@ -4,6 +4,7 @@
     <title>Diálogos com a academia</title>
     <meta charset="utf-8" />
     <meta name="author" content="Ricardo Feliz Okamoto   (ABJ)" />
+    <meta name="date" content="2021-04-11" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -13,7 +14,7 @@ class: center, middle, inverse, title-slide
 # Diálogos com a academia
 ## programação em R para pesquisa científica
 ### Ricardo Feliz Okamoto <br/> (ABJ)
-### 2021/11/04
+### 04/11/2021
 
 ---
 
@@ -34,49 +35,28 @@ Pesquisador na Associação Brasileira de Jurimetria (ABJ)
 .pull-right[![eu](img/eu.jpg)]
 
 ---
-class: centralized
+class: center, middle
 
-# Caminho dessa apresentação
-
-Vou contar duas experiências que eu tive com R que me auxiliaram na pesquisa
-1. A primeira é o uso do R dentro do contexto da ABJ
-2. A segunda é o uso do R para fazer meu TCC
-
+## Independência funcional e discricionariedade burocrática do Ministério Público
+#### Como que a independência funcional se converte em discricionariedade para os membros do MP na prática?
 ---
-# Experiência 1: ABJ
+# Metodologia
 
-#### Listagem de processos 
-- web scraping
-- pedidos de LAI aos tribunais
+O primeiro passo era identificar e descrever o fluxo de processamento de casos do Ministério Público. Isso significa: quando o MP recebe uma demanda, como ele reage a isso? 
 
-#### Classificação manual ou automatizada
-- GForms
+Feito isso, eu identifiquei gargalos nesse procedimento em que os promotores tinham certa discricionariedade no caso, em que eles podiam escolher para que lado o processo ia seguir. 
 
-#### Data quality
-- Verificação de inconsistências nos dados
+Identificados os gargalos, coletei dados para avaliar a forma como a discricionariedade era exercida. 
 
-#### Análise de dados 
-- veremos isso com mais detalhes na experiência 2, sobre o TCC
+A questão não era tanto _se_ os promotores eram discricionários ou não, mas era _qual é a forma dessa discricionariedade?_. Com isso eu queria avaliar se a discricionariedade significa que os promotores escolhiam _no que_ e _quando_ agir; ou se era uma discricionariedade simplesmente de _como_ agir. 
 
-#### Produção de relatórios automatizados
-- RMarkdown
+## E onde o R entra nisso?
 
----
-# Experiência 2: TCC
-
-### Meu tema
-
-Como que a independência funcional se converte em discricionariedade para os membros do MP na prática?
-
-### Como eu fui tentando resolver esse problema? E onde o R entra nisso?
-
-Eu identifiquei gargalos no procedimento interno do MP para tratar casos e explorei os dados em cada situação.
-
-Como a minha pesquisa foi uma pesquisa quantitativa, o R foi meu parceiro durante todo o processo
+A forma como eu estudei isso foi através de uma metodologia quantitativa, realizando testes de hipóteses para avaliar minhas hióteses
 
 ---
 
-## O ciclo da Ciência de dados
+## O ciclo da Ciência de Dados
 
 &lt;img src="img/data-science.png" width="90%" style="display: block; margin: auto;" /&gt;
 
@@ -112,6 +92,25 @@ class: center, middle, inverse
 # FIM
 
 &lt;img src="img/fim.gif" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+# Experiência na ABJ
+
+#### Listagem de processos 
+- web scraping
+- pedidos de LAI
+
+#### Classificação manual ou automatizada
+- GForms
+
+#### Data quality
+- Verificação de inconsistências nos dados
+
+#### Análise de dados 
+- vimos isso no TCC
+
+#### Produção de relatórios automatizados
+- RMarkdown
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

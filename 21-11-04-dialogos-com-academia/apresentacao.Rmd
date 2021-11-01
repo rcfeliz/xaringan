@@ -14,27 +14,38 @@ output:
 ---
 # Quem sou eu 
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  fig.align = "center",
+  out.width = "90%",
+  message = FALSE,
+  warning = FALSE,
+  dpi=300
+)
+```
+
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
 style_mono_accent(
-  base_color = "#E69F00",
+  base_color = "#EFA76C",
+  background_color = "#F5E395",
+  header_color = "#4B76AD",
   header_font_google = google_font("Josefin Sans"),
   text_font_google   = google_font("Montserrat", "300", "300i"),
   code_font_google   = google_font("Fira Mono")
 )
 ```
 
+.pull-left[
 Estudante de Direito na Universidade de São Paulo (USP)
 
 Ex-bolsista do Programa de Educação Tutorial do MEC (PET - Sociologia Jurídica)
 
 Pesquisador na Associação Brasileira de Jurimetria (ABJ)
+]
 
-```{r echo=FALSE, eval=TRUE}
-
-knitr::include_graphics("img/eu.jpg")
-
-```
+.pull-right[![eu](img/eu.jpg)]
 
 ---
 class: centralized
@@ -46,36 +57,36 @@ Vou contar duas experiências que eu tive com R que me auxiliaram na pesquisa
 2. A segunda é o uso do R para fazer meu TCC
 
 ---
-# Experiência 1: A ABJ
+# Experiência 1: ABJ
 
-Listagem de processos 
+#### Listagem de processos 
 - web scraping
 - pedidos de LAI aos tribunais
 
-Classificação manual ou automatizada
+#### Classificação manual ou automatizada
 - GForms
 
-Data quality
+#### Data quality
 - Verificação de inconsistências nos dados
 
-Análise de dados 
+#### Análise de dados 
 - veremos isso com mais detalhes na experiência 2, sobre o TCC
 
-Produção de relatórios automatizados
+#### Produção de relatórios automatizados
 - RMarkdown
 
 ---
 # Experiência 2: TCC
 
-## Meu tema
+### Meu tema
 
 Como que a independência funcional se converte em discricionariedade para os membros do MP na prática?
 
-## Como eu fui tentando resolver esse problema? E onde o R entra nisso?
+### Como eu fui tentando resolver esse problema? E onde o R entra nisso?
 
 Eu identifiquei gargalos no procedimento interno do MP para tratar casos e explorei os dados em cada situação.
 
-Como a minha pesquisa foi uma pesquisa quantitativa, o R foi meu parceiro constante
+Como a minha pesquisa foi uma pesquisa quantitativa, o R foi meu parceiro durante todo o processo
 
 ---
 
@@ -95,7 +106,8 @@ knitr::include_graphics("img/data-science.png")
 
 ---
 # Visualização: Elaboração de diagramas!
-```{r echo=FALSE, eval=TRUE}
+
+```{r echo=FALSE, eval=TRUE, out.width="85%"}
 
 knitr::include_graphics("img/diagrama_tcc.png")
 

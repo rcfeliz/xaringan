@@ -31,6 +31,7 @@ style_mono_accent(
   base_color = "#EFA76C",
   background_color = "#F5E395",
   header_color = "#4B76AD",
+  text_bold_color = "#000000",
   header_font_google = google_font("Josefin Sans"),
   text_font_google   = google_font("Montserrat", "300", "300i"),
   code_font_google   = google_font("Fira Mono")
@@ -84,6 +85,34 @@ knitr::include_graphics("img/data-science.png")
 - Visualização
 
 ---
+# Importação: Conhecendo seus dados e importando a base
+
+A primeira etapa é saber o processo por meio do qual os dados foram gerados.
+
+>_sem essa informação, nós não podemos determinar se utilizar processos padrões de análise de dados irá produzir inferências enviesadas. Somente ao saber do processo por meio do qual os dados foram gerados é que nós conseguiremos produzir uma inferência causal ou descritiva válida._
+
+KING, Gary; KEOHANE, Robert O.; VERBA, Sidney. **Designing Social Inquiry: Scientific Inference in Qualitative Research.** Princeton: Princeton University Press. 1994, p. 23
+
+No meu caso, os dados que eu utilizei foram dados do **SIS MP Integrado**, que é um sistema de registro de procedimentos, e não um sistema de acompanhamento de casos. 
+- Esses dados eram registrados pelos próprios promotores (e, portanto, continham erro humano e variabilidade); 
+
+
+---
+## Limpeza: Escolhas metodológicas
+### Quais procedimentos considerar?
+
+O problema era: havia vários procedimentos em 2019. Alguns procedimentos de 2019 tinham origem em anos anteriores; e outros procedimentos tinham origem em 2019 mesmo. Como eu filtro esses procedimentos? 
+
+### Como classificar as parte? Regex de partes
+
+| tipo de pessoa             | regex                                                                 |
+|----------------------------|-----------------------------------------------------------------------|
+| pessoa física              | idêntico à base original                                              |
+| pessoa jurídica            | Ltda, SA, ME, EPP, Construtoras, Imobiliarias, etc...                 |
+| poder público              | Prefeitura, Município, Polícia, CET, CETESB, Secretaria, SABESP, vara |
+| sociedade civil organizada | Associação, Conselhos, Amigos do Bairro, Federação, GAEMA             |
+
+---
 # Visualização: Elaboração de diagramas!
 
 ```{r echo=FALSE, eval=TRUE, out.width="85%"}
@@ -130,22 +159,4 @@ knitr::include_graphics("img/fim.gif")
 
 ```
 
----
-# Experiência na ABJ
-
-#### Listagem de processos 
-- web scraping
-- pedidos de LAI
-
-#### Classificação manual ou automatizada
-- GForms
-
-#### Data quality
-- Verificação de inconsistências nos dados
-
-#### Análise de dados 
-- vimos isso no TCC
-
-#### Produção de relatórios automatizados
-- RMarkdown
 
